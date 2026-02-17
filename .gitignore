@@ -1,0 +1,15 @@
+# datasets
+*.csv
+*.npy
+*.pkl
+
+# large files
+*.zip
+*.rar
+
+# jupyter
+.ipynb_checkpoints/
+
+# OS
+Thumbs.db
+.DS_Store
