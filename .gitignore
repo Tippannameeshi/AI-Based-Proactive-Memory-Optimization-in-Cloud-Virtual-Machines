@@ -1,4 +1,23 @@
-# datasets
+# Python
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+
+# Runtime logs
+logs/
+*.log
+
+# Databases
+*.db
+
+# Backup files
+*.backup
+
+# OS files
+.DS_Store# datasets
 *.csv
 *.npy
 *.pkl
