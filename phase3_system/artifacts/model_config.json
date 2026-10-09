@@ -1,0 +1,31 @@
+{
+    "model_type": "LSTM",
+    "features": [
+        "guest_memory_used_mib",
+        "cpu_utilization_pct"
+    ],
+    "target": "guest_memory_used_mib",
+    "sequence_length": 6,
+    "forecast_horizon": 2,
+    "feature_scaler": "RobustScaler",
+    "target_scaler": "RobustScaler",
+    "safety_margin_mib": 250.0,
+    "allocation_step_mib": 64,
+    "min_memory_mib": 512,
+    "max_memory_mib": 4096,
+    "high_memory_threshold_mib": 600,
+    "test_metrics": {
+        "mae_mib": 14.2251,
+        "rmse_mib": 34.9595,
+        "r2": 0.8505,
+        "high_memory_accuracy": 0.9542,
+        "high_memory_precision": 0.861,
+        "high_memory_recall": 0.8729,
+        "high_memory_f1": 0.8669
+    },
+    "controller_test_metrics": {
+        "coverage_pct": 100.0,
+        "mean_allocation_mib": 764.56,
+        "underallocations": 0
+    }
+}
